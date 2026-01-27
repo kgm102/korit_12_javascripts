@@ -1,0 +1,133 @@
+/* 전체 기본 설정 */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* 배경: 하늘 + 들판 */
+body {
+  min-height: 100vh;
+  text-align: center;
+  background: linear-gradient(
+    to bottom,
+    #1e90ff 0%,
+    #87ceeb 45%,
+    #6dbf4b 46%,
+    #3e8e41 100%
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+}
+
+/* 메인 박스 */
+body > div:first-of-type {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px 40px;
+  border-radius: 16px;
+  width: 90%;
+  max-width: 420px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* 제목 */
+h1 {
+  margin-bottom: 20px;
+  color: #1e3a5f;
+}
+
+/* 입력 영역 */
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* 추가 버튼 */
+#add-btn {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background-color: #1e90ff;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+#add-btn:hover {
+  background-color: #187bcd;
+}
+
+/* 리스트 */
+#todo-list {
+  list-style: none;
+  margin-top: 10px;
+}
+
+/* 개별 항목 */
+.todo-app__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f7f7;
+  padding: 8px 12px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  font-size: 14px;
+  gap: 8px;             
+  white-space: nowrap;
+}
+
+.todo-app__item input[type="checkbox"] {
+  margin: 0;
+  align-self: center;
+}
+
+/* 체크박스 */
+.todo-app__checkbox {
+  margin-right: 8px;
+}
+
+/* 텍스트 */
+.todo-app__text {
+  flex: 1;
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* 삭제 버튼 */
+.todo-app__delete-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* 완료된 항목 */
+.todo-app__item--completed {
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+
+/* 총 가격 박스 */
+#total-box {
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 15px 30px;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #1f4f1f;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+
