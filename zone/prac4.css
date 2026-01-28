@@ -1,0 +1,47 @@
+/* header → 위쪽 그라데이션, 흰 글씨, 중앙정렬
+
+section / 카드 → 흰 배경, 그림자, 둥근 모서리, 여백
+
+ul / li → 목록 점
+
+a 링크 → 파란색, hover 시 색 변화
+
+footer → 중앙정렬, 연한 회색 */
+
+body {
+  background-color: grey;
+}
+
+header {
+  background: linear-gradient(90deg, Yellow, blue);
+  color: darkblue;
+  text-align: center;
+  color: white;
+  border-radius: 20px;
+}
+
+section {
+  background-color: white;
+  border-radius: 10px;
+  margin: 15px;
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.1);
+  padding-left: 15px;
+  border: 1px solid;
+  padding: 10px;
+}
+
+a{
+  transition: 0.3s;
+  text-decoration: underline;
+  color: blue;
+}
+
+a:hover{
+  color: red;
+}
+
+footer {
+  text-align: center;
+  color: beige;
+  padding: 10px;
+}

@@ -1,0 +1,72 @@
+/* body → 배경색, 폰트 지정
+
+header → 그라데이션, 중앙정렬, 패딩
+
+main → 중앙 폭 80%, 상하 마진
+
+section → 흰 배경, 그림자, 둥근 모서리, 여백
+
+ul → 정사각형 점 스타일, 좌측 여백
+
+a → 파란색, 밑줄, hover 시 색 변화
+
+footer → 중앙정렬, 연한 회색, 작게 */
+/* body → 배경색, 폰트 지정 */
+body {
+  background-color: bisque;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header {
+  text-align: center;
+  background: linear-gradient(120deg, red, blue );
+  color: white;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+main {
+  width: 80%;
+  margin: 40px auto;
+}
+/* section → 흰 배경, 그림자, 둥근 모서리, 여백 */
+/* ul → 정사각형 점 스타일, 좌측 여백
+
+a → 파란색, 밑줄, hover 시 색 변화
+
+footer → 중앙정렬, 연한 회색, 작게 */
+section {
+  background-color: darkgray;
+  box-shadow: 0 4px 4px rgba(0,0,0,0.1);
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border: 1px solid;
+}
+
+h2 {
+  color: white;
+}
+
+ul {
+  list-style: square;
+  padding-left: 20px;
+}
+
+a {
+  text-decoration: underline;
+  color: blue;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: red;
+}
+
+footer {
+  text-align: center;
+  color: dimgray;
+  font-size: 14px;
+  padding: 10px;
+}
